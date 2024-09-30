@@ -9,7 +9,7 @@
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="./assets/images/favicon-32x32.png"
+      href="/images/favicon-32x32.png"
     />
     <link
       href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap"
@@ -20,6 +20,57 @@
     <title>Frontend Mentor | Blog preview card</title>
   </head>
   <body class="h-screen bg-[#F4D04E] flex justify-center items-center">
-    <h1 class="font-figtree text-7xl">Hello, world!</h1>
+    <div
+      class="flex flex-col items-start w-[327px] p-[24px] gap-[24px] rounded-[20px] border-[1px] border-[#111] bg-white shadow-[8px_8px_0_#000] md:w-[384px] md:flex-shrink-0"
+    >
+      <img
+        class="flex items-center self-stretch rounded-[10px]"
+        src="images/Blog-Image.png"
+        alt="Blog image"
+      />
+
+      <div
+        class="content flex flex-col items-start gap-[12px] self-stretch md:w-[384px] md:flex-shrink-0"
+      >
+        <h2
+          class="flex p-[4px_12px] justify-center items-center gap-[8px] rounded-[4px] bg-[#f4d04e] font-figtree text-[12px] font-extrabold text-slate-950 leading-[18px] md:leading-[21px]"
+        >
+          Learning
+        </h2>
+
+        <h3
+          class="text-slate-950 font-figtree text-[12px] leading-[18px] font-medium md:leading-[21px]"
+        >
+          Published 21 Dec 2023
+        </h3>
+
+        <h1
+          class="text-slate-950 font-figtree text-[20px] font-extrabold leading-[18px] hover:text-[#f4d04e] md:leading-[36p]"
+        >
+          HTML & CSS foundations
+        </h1>
+
+        <p
+          class="text-slate-500 font-figtree text-[14px] font-medium leading-[21px] md:leading-[24px]"
+        >
+          These languages are the backbone of every<br />
+          website, defining structure, content, and<br />
+          presentation.
+        </p>
+      </div>
+
+      <div class="author flex items-center gap-[12px]">
+        <img
+          class="author w-[32px] h-[32px] rounded-[32px]"
+          src="images/image-avatar.webp"
+          alt="Author image"
+        />
+        <p
+          class="author-name text-gray-950 font-figtree text-[14px] font-extrabold leading-[21px]"
+        >
+          Greg Hooper
+        </p>
+      </div>
+    </div>
   </body>
 </html>
